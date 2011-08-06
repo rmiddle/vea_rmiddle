@@ -41,7 +41,7 @@ if ($__action == "newdomain") {
     error("not all necessary data given");
   }
 
-  $r = q("insert into virtual_users (user, password, domain_id) values ('" . $username . "','" . md5($password) . "','" . $domain . "')");
+  $r = q("insert into virtual_users (email, password, domain_id) values ('" . $username . "','" . md5($password) . "','" . $domain . "')");
   if ($r == "-2") {
     error("database error");
   }

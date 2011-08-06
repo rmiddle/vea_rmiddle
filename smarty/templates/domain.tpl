@@ -7,7 +7,7 @@
   <li><b>users:</b>
     <ul>
     {foreach from=$users item=user}
-      <li><a href="#" class="userbutton">{$user.user}</a>
+      <li><a href="#" class="userbutton">{$user.email}</a>
         <ul class="edituser" style="display: none;">
           <li><button class="changeuserpassword" name="{$user.id}">reset password</button><input type="text"></li>
           <li><button class="deleteuser" name="{$user.id}">delete user {$user.user}</button></li>

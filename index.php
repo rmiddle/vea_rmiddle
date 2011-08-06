@@ -16,7 +16,7 @@ if (!$__view) {
 
   $rdomain = q("select * from virtual_domains where name = '" . $__domain . "'");
   $domain = $rdomain[0];
-  $users = q("select * from virtual_users where domain_id = '" . $domain['id'] . "' order by user");
+  $users = q("select * from virtual_users where domain_id = '" . $domain['id'] . "' order by email");
   $aliases = q("select * from virtual_aliases where domain_id = '" . $domain['id'] . "' order by source");
   $smarty->assign('domain', $domain);
   $smarty->assign('users', $users);
