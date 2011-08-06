@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+Options -Indexes
+AuthType Basic
+AuthName "vea"
+AuthUserFile /vhosts/vea.bar.bz/docs/demo/.htpasswd
+Require valid-user
