@@ -1,0 +1,19 @@
+
+This is the first version of vea - virtual email admin written by Felix Wolf <felix@xis.to>.
+This software is under the Apache License v2. Please read the LICENSE file for details.
+
+vea is an ajax driven virtual email management frontend based on php, smarty templates and jquery.
+vea should work together with a configuration described at http://workaround.org/ispmail/etch.
+
+Installation instructions:
+  * put archive content somewhere in your webroot
+  * make ./smarty/templates_c/ writable by your http-user
+  * edit setup.php and change variable values to fit your configuration
+  * maybe you want to set permissions for setup.php that only the http-user (ie. www-data) is able to read it
+  * make sure you have enabled .htaccess support in your webserver configuration
+  * create a http-authentication-user (ie. "htpasswd .htpasswd admin")
+
+Please note:
+This "maybe a bit crappy piece of software" was not devolped with any security thoughts in mind.
+Make sure you use it with SSL, only accessible in your management LAN or management VPN in
+production environments.
